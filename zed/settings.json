@@ -1,0 +1,87 @@
+{
+  "buffer_line_height": "comfortable",
+  "buffer_font_weight": 400.0,
+  "context_servers": {
+    "postgres-context-server": {
+      "enabled": true,
+      "settings": {},
+    },
+  },
+  "autosave": "on_window_change",
+  "terminal": {
+    "minimum_contrast": 37.0,
+    "shell": {
+      "program": "/opt/homebrew/bin/fish",
+    },
+    "font_size": 16,
+  },
+  "base_keymap": "JetBrains",
+  "colorize_brackets": true,
+  "git": {
+    "inline_blame": {
+      "delay_ms": 200,
+      "show_commit_summary": true,
+    },
+    "branch_picker": {
+      "show_author_name": true,
+    },
+  },
+
+  "code_actions_on_format": {
+    "source.organizeImports.biome": true,
+    "source.fixAll.biome": true,
+  },
+  "close_on_file_delete": true,
+  "excerpt_context_lines": 3,
+  "expand_excerpt_lines": 10,
+  "agent_ui_font_size": 13.0,
+  "preview_tabs": {
+    "enable_keep_preview_on_code_navigation": false,
+    "enable_preview_from_file_finder": true,
+  },
+  "features": {
+    "edit_prediction_provider": "copilot",
+  },
+  "icon_theme": "Material Icon Theme",
+  "agent": {
+    "always_allow_tool_actions": true,
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini",
+    },
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "gpt-5-mini",
+    },
+  },
+  "languages": {
+    "YAML": {
+      "formatter": "language_server",
+    },
+  },
+  "ui_font_size": 17,
+  "ui_font_family": "Menlo",
+  "buffer_font_size": 15.0,
+  "buffer_font_family": "Menlo",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Github Dark Dimmed",
+  },
+  "lsp": {
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "keyOrdering": true,
+          "format": {
+            "singleQuote": true,
+          },
+          "schemas": {
+            "https://getcomposer.org/schema.json": ["/*"],
+            "../relative/path/schema.json": ["/config*.yaml"],
+          },
+        },
+      },
+    },
+  },
+}
