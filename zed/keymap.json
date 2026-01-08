@@ -1,0 +1,15 @@
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            "cmd+p": "command_palette::Toggle",
+            "shift shift": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            // "j k": "vim::NormalBefore"
+        }
+    }
+]

@@ -1,4 +1,13 @@
 {
+  "outline_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
   "buffer_line_height": "comfortable",
   "buffer_font_weight": 400.0,
   "context_servers": {
