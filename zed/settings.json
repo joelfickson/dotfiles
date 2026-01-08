@@ -4,32 +4,31 @@
   "context_servers": {
     "postgres-context-server": {
       "enabled": true,
-      "settings": {},
-    },
+      "settings": {}
+    }
   },
   "autosave": "on_window_change",
   "terminal": {
     "minimum_contrast": 37.0,
     "shell": {
-      "program": "/opt/homebrew/bin/fish",
+      "program": "/opt/homebrew/bin/fish"
     },
-    "font_size": 16,
+    "font_size": 16
   },
   "base_keymap": "JetBrains",
   "colorize_brackets": true,
   "git": {
     "inline_blame": {
       "delay_ms": 200,
-      "show_commit_summary": true,
+      "show_commit_summary": true
     },
     "branch_picker": {
-      "show_author_name": true,
-    },
+      "show_author_name": true
+    }
   },
-
   "code_actions_on_format": {
     "source.organizeImports.biome": true,
-    "source.fixAll.biome": true,
+    "source.fixAll.biome": true
   },
   "close_on_file_delete": true,
   "excerpt_context_lines": 3,
@@ -37,27 +36,44 @@
   "agent_ui_font_size": 13.0,
   "preview_tabs": {
     "enable_keep_preview_on_code_navigation": false,
-    "enable_preview_from_file_finder": true,
+    "enable_preview_from_file_finder": true
   },
   "features": {
-    "edit_prediction_provider": "copilot",
+    "edit_prediction_provider": "copilot"
   },
   "icon_theme": "Material Icon Theme",
   "agent": {
     "always_allow_tool_actions": true,
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini",
+      "model": "gpt-5-mini"
     },
     "default_model": {
       "provider": "zed.dev",
-      "model": "gpt-5-mini",
-    },
+      "model": "gpt-5-mini"
+    }
   },
   "languages": {
     "YAML": {
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
+    "Python": {
+      "formatter": "language_server",
+      "format_on_save": "on"
+    },
+    "Rust": {
+      "formatter": {
+        "external": {
+          "command": "rustfmt",
+          "arguments": []
+        }
+      },
+      "format_on_save": "on"
+    },
+    "TypeScript": {
+      "formatter": "language_server",
+      "format_on_save": "on"
+    }
   },
   "ui_font_size": 17,
   "ui_font_family": "Menlo",
@@ -66,7 +82,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Github Dark Dimmed",
+    "dark": "Github Dark Dimmed"
   },
   "lsp": {
     "yaml-language-server": {
@@ -74,14 +90,44 @@
         "yaml": {
           "keyOrdering": true,
           "format": {
-            "singleQuote": true,
+            "singleQuote": true
           },
           "schemas": {
-            "https://getcomposer.org/schema.json": ["/*"],
-            "../relative/path/schema.json": ["/config*.yaml"],
-          },
-        },
-      },
+            "https://getcomposer.org/schema.json": [
+              "/*"
+            ],
+            "../relative/path/schema.json": [
+              "/config*.yaml"
+            ]
+          }
+        }
+      }
     },
-  },
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        },
+        "imports": {
+          "merge": {
+            "glob": false
+          },
+          "granularity": {
+            "enforce": true,
+            "group": "module"
+          }
+        },
+        "inlayHints": {
+          "maxLength": null,
+          "lifetimeElisionHints": {
+            "enable": "skip_trivial",
+            "useParameterNames": true
+          },
+          "closureReturnTypeHints": {
+            "enable": "always"
+          }
+        }
+      }
+    }
+  }
 }
