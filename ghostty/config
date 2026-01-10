@@ -1,3 +1,4 @@
 # Use fish for new Ghostty sessions.
 command = /opt/homebrew/bin/fish
 font-family = "MesloLGS NF"
+2
