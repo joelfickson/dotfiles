@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal configuration files for macOS (fish shell, Ghostty, and Zsh).
+Personal configuration files for macOS (fish shell, Ghostty, Zed) plus a versioned library of Claude Code skills.
 
 ## Structure
 
@@ -15,6 +15,10 @@ dotfiles/
 │   └── conf.d/            # Auto-sourced configs
 ├── ghostty/              # Ghostty terminal configuration
 │   └── config
+├── skills/               # Claude Code skills (one folder per skill, each with SKILL.md)
+│   ├── writing/          # Prose: technical docs, blog, general voice
+│   ├── design-principles/# House design rules (no border framing)
+│   └── .../              # Imported personal skill library
 └── zsh/                  # Zsh configuration
     ├── .zshrc
     └── .zshenv
@@ -152,6 +156,20 @@ The fish config adds paths for:
 ### Prompt
 - Uses Starship if installed
 - Tide prompt is installed and configured via `fish_variables`
+
+## Claude Code skills
+
+`skills/` holds Claude Code skills, one folder per skill, each with a `SKILL.md`. They live here so they travel with the dotfiles and stay version-controlled.
+
+- `writing/` - prose skill for technical docs, blog posts, and general team messages, with the house style (no emojis or em-dashes), plain words, and conciseness rules.
+- `design-principles/` - house design rules layered on top of the task-specific design skills. First rule: no border framing (use whitespace, background, and shadow instead).
+- The rest is a personal skill library (marketing, design, and dev-workflow skills) imported from `~/.claude/skills`.
+
+`install.sh` does not link these yet. To use one in Claude Code, symlink the individual skill into your skills directory (do not replace the whole `~/.claude/skills` folder):
+
+```bash
+ln -sfn "$(pwd)/skills/writing" ~/.claude/skills/writing
+```
 
 ## Post-install checklist
 
