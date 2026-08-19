@@ -1,4 +1,5 @@
 {
+  "cli_default_open_behavior": "new_window",
   "outline_panel": {
     "dock": "right"
   },
@@ -17,6 +18,7 @@
     }
   },
   "autosave": "on_window_change",
+  "format_on_save": "on",
   "terminal": {
     "minimum_contrast": 37.0,
     "shell": {
@@ -50,7 +52,7 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "VSCode Icons for Zed (Dark Official Icons)",
   "agent": {
     "always_allow_tool_actions": true,
     "inline_assistant_model": {
@@ -58,8 +60,8 @@
       "model": "gpt-5-mini"
     },
     "default_model": {
-      "provider": "zed.dev",
-      "model": "gpt-5-mini"
+      "provider": "vercel",
+      "model": "openai/gpt-5-mini"
     }
   },
   "languages": {
@@ -91,7 +93,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Github Dark Dimmed"
+    "dark": "Ayu Dark"
   },
   "lsp": {
     "yaml-language-server": {
