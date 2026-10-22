@@ -163,6 +163,7 @@ The fish config adds paths for:
 
 - `writing/` - prose skill for technical docs, blog posts, and general team messages, with the house style (no emojis or em-dashes), plain words, and conciseness rules.
 - `design-principles/` - house design rules layered on top of the task-specific design skills. First rule: no border framing (use whitespace, background, and shadow instead).
+- `codex/` - adversarial second-opinion check that hands a fixed list of claims to the Codex CLI (read-only) and judges each one against named evidence. Symlinked into `~/.claude/skills`; edit it here.
 - The rest is a personal skill library (marketing, design, and dev-workflow skills) imported from `~/.claude/skills`.
 
 `install.sh` does not link these yet. To use one in Claude Code, symlink the individual skill into your skills directory (do not replace the whole `~/.claude/skills` folder):
