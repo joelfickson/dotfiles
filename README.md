@@ -6,6 +6,8 @@ Personal configuration files for macOS (fish shell, Ghostty, Zed) plus a version
 
 ```
 dotfiles/
+├── bookmarks/            # Curated link lists
+│   └── engineering-blogs.md
 ├── fish/                 # Fish shell configuration (full directory)
 │   ├── config.fish        # Main config
 │   ├── fish_plugins       # Fisher plugin list
